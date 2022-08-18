@@ -42,7 +42,34 @@
               </v-btn>
             </v-btn-toggle>
           </v-toolbar>
+
           <Categories />
+          <v-toolbar flat class="mt-5">
+
+              <v-toolbar-title class="text-h6">Popular products</v-toolbar-title>
+              <v-spacer></v-spacer>
+              <v-btn rounded color="green" dark class="px-8"> See All</v-btn>
+          </v-toolbar>
+          <Products />
+          <v-card flat color="#E2F2E5" class="rounded-xl mt-8">
+            <v-toolbar flat color="transparent" class="mb-4">
+              <v-toolbar-title class="text-h6 mt-5">Popular Bundle Pack</v-toolbar-title>
+            </v-toolbar>
+            <Packs />
+          </v-card>
+          <v-card flat color="#FAFAFA" class="mt-8 py-5 px-16">
+            <div style="
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+            ">
+              <h3>What our Clients say</h3>
+            </div>
+            <Clients />
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -52,6 +79,9 @@
 <script>
 import NavBar from '@/components/NavBar.vue';
 import Categories from '../components/Categories.vue';
+import Products from '../components/Products.vue';
+import Packs from '@/components/Packs.vue';
+import Clients from '@/components/Clients.vue';
 
 export default {
   name: 'Home',
@@ -60,7 +90,10 @@ export default {
   }),
   components: {
     NavBar,
-    Categories
+    Categories,
+    Products,
+    Packs,
+    Clients
 },
 }
 </script>
