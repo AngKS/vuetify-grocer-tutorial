@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkvuetify_grocer"]=self["webpackChunkvuetify_grocer"]||[]).push([[443],{1272:function(t,u,e){e.r(u),e.d(u,{default:function(){return c}});var n=function(){var t=this;t._self._c;return t._m(0)},r=[function(){var t=this,u=t._self._c;return u("div",{staticClass:"about"},[u("h1",[t._v("This is an about page")])])}],s=e(1001),i={},a=(0,s.Z)(i,n,r,!1,null,null,null),c=a.exports}}]);
+//# sourceMappingURL=about.ef797b87.js.map
