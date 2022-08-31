@@ -46,9 +46,9 @@
           <Categories />
           <v-toolbar flat class="mt-5">
 
-              <v-toolbar-title class="text-h6">Popular products</v-toolbar-title>
-              <v-spacer></v-spacer>
-              <v-btn rounded color="green" dark class="px-8"> See All</v-btn>
+            <v-toolbar-title class="text-h6">Popular products</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-btn rounded color="green" dark class="px-8"> See All</v-btn>
           </v-toolbar>
           <Products />
           <v-card flat color="#E2F2E5" class="rounded-xl mt-8">
@@ -70,9 +70,43 @@
             </div>
             <Clients />
           </v-card>
+          <v-toolbar flat color="transparent" class="mt-8">
+            <v-toolbar-title class="text-h6">
+              Our Trusted Partners
+            </v-toolbar-title>
+          </v-toolbar>
+          <Partners />
+          <v-card flat color="#E3F2E5" class="rounded-xl mtop mbottom mx-10 pa-4" height="350">
+            <v-row>
+              <v-col cols="12" xs="12" sm="12" md="5">
+                <v-card class="rounded-xl mt-n16 ml-16 mobile" outlined flat height="450" width="200">
+                  <v-img src="mobile.png"></v-img>
+                </v-card>
+              </v-col>
+              <v-col cols="12" xs="12" sm="6" md="7">
+                <h1 class="mt-16">Download our App Today!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />
+                  Perferendis nisi porro aspernatur, <br />
+                  voluptatem illum ducimus nihil ipsa rerum obcaecati quibusdam optio, <br />
+                  dignissimos corporis facere iure<br />
+                  saepe inventore! Sit, amet error.
+                </p>
+                <v-btn color="black" dark class="mb-10">
+                  <v-icon color="white" left>fab fa-apple</v-icon>
+                  App Store
+                </v-btn>
+                <v-btn color="black" dark class="ml-4 mb-10">
+                  <v-icon color="white" left>fab fa-google-play</v-icon>
+                  Play Store
+                </v-btn>
+              </v-col>
+            </v-row>
+
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
+    <Footer />
   </v-app>
 </template>
 
@@ -82,6 +116,8 @@ import Categories from '../components/Categories.vue';
 import Products from '../components/Products.vue';
 import Packs from '@/components/Packs.vue';
 import Clients from '@/components/Clients.vue';
+import Partners from '../components/Partners.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
   name: 'Home',
@@ -93,7 +129,9 @@ export default {
     Categories,
     Products,
     Packs,
-    Clients
+    Clients,
+    Partners,
+    Footer
 },
 }
 </script>

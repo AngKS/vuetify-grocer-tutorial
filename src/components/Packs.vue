@@ -2,7 +2,7 @@
     <v-row justify="center" class="space px-16 pb-5">
         <v-col cols="12" xs="12" sm="6" md="4" v-for="(pack, i) in packs" :key="i">
             <v-card class="mx-auto rounded-xl" max-width="300" flat outlined>
-                <div align="center" justify="enter">
+                <div align="center" justify="center">
                     <v-img max-width="300" max-height="300" contain :src="pack.img"></v-img>
                 </div>
                 <v-card-title>{{pack.title}}</v-card-title>

@@ -17,7 +17,16 @@
                 </v-list>
                 <v-card-text>
                     <div class="mt-n7">
-                        <v-rating v-model="rating" color="yellow darken-1" background-color="grey darken-1" empty-icon="$ratingFull" half-increments hover small></v-rating>
+                        <v-rating 
+                            v-model="rating" 
+                            color="yellow darken-1" 
+                            background-color="grey darken-1" 
+                            empty-icon="$ratingFull" 
+                            half-increments 
+                            hover 
+                            small
+                        >
+                        </v-rating>
                     </div>
                     {{client.bio}}
                 </v-card-text>
