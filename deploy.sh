@@ -15,7 +15,7 @@ time=$(date +%Y%m%d%H%M%S)
 git commit -m "[Deploy] - $time"
 
 # push to repo gh-pages branch
-git push origin gh-pages
+git push --set-upstream origin gh-pages
 
 # Log success
 echo "Deployed to Github Pages!"
