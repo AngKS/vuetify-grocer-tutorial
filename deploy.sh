@@ -15,7 +15,7 @@ time=$(date +%Y%m%d%H%M%S)
 git commit -m "[Deploy] - $time"
 
 # push to repo gh-pages branch
-git push -f git@github.com:angks/vuetify-grocer-tutorial.git master:gh-pages
+git push origin gh-pages
 
 # Log success
 echo "Deployed to Github Pages!"
